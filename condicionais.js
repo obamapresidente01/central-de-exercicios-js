@@ -1,27 +1,27 @@
 function exercicio01() {
 
-let numero = prompt("Digite um número:"); //23
+    let numero = prompt("Digite um número:"); //23
 
-if (numero > 0) {
-    console.log("Positivo.");
+    if (numero > 0) {
+        console.log("Positivo.");
 
-} else {
+    } else {
 
-    if (numero < 0) {
+        if (numero < 0) {
 
-        console.log("Negativo.")
-    } else { 
+            console.log("Negativo.")
+        } else {
 
-        console.log("É Zero.")
+            console.log("É Zero.")
+        }
+
+
     }
-
-
-}
 }
 
 
 function solucao() {
-   let numero = prompt("Digite um número");
+    let numero = prompt("Digite um número");
     let resto = numero % 2;
     if (resto === 0) {
         console.log("par");
@@ -40,10 +40,10 @@ function exercicio03() {
     let idade = prompt("Digite sua idade:");
 
     if (idade >= 18) {
-        alert ("Você é maior de idade")
+        alert("Você é maior de idade")
     } else {
-        alert ("Você é menor de idade")
-     }
+        alert("Você é menor de idade")
+    }
 
 
 
@@ -55,26 +55,26 @@ function exercicioextra() {
     let nota = prompt("Coloque sua nota:");
 
     if (nota == 100) {
-        alert ("Aprovado com distinção")
+        alert("Aprovado com distinção")
     } else if (nota >= 60) {
-        alert ("Aprovado");
+        alert("Aprovado");
     } else {
-        alert ("Desaprovado");
+        alert("Desaprovado");
     }
-    
+
 }
 
 function exercicio04() {
-    let idade = prompt ("Coloque sua idade:");
+    let idade = prompt("Coloque sua idade:");
 
     if (idade >= 18) {
-        alert ("Adulto");
+        alert("Adulto");
     } else if (idade >= 13) {
-        alert ("Adolescente");
-    } else if (idade >=0) {
-        alert ("Criança"); 
+        alert("Adolescente");
+    } else if (idade >= 0) {
+        alert("Criança");
     } else {
-        alert ("idade inválida");
+        alert("idade inválida");
     }
 }
 
@@ -82,13 +82,112 @@ function exercicio05() {
     let nota = prompt("Digite sua nota");
 
     if (nota >= 60) {
-        alert ("Aprovado");
+        alert("Aprovado");
     } else {
-        alert ("Desaprovado")
+        alert("Desaprovado")
     }
 }
 
-function exercicio06 () {
+//intermediario
 
+function intermediario01() {
+
+    let num1 = prompt("Digite o primeiro número");
+    let num2 = prompt("Digite o segundo número");
+    let num3 = prompt("Digite o terceiro número");
+
+
+    let maior;
+
+    if (num1 >= num2 && num1 >= num3) { maior = num1; }
+    else if (num2 >= num1 && num2 >= num3) { maior = num2 }
+    else {
+        maior = num3;
+    }
+
+    alert("O maior é:" + maior)
+
+
+
+
+}
+
+function intermediario02() {
+    let n1 = Number(prompt("Digite um número: "));
+    let n2 = Number(prompt("Digite outro número: "));
+
+    let operacao = prompt("Digite a operação: ");
+
+    // let resultado;
+
+    // if (operacao == "+") {
+    //     resultado = n1 + n2;
+
+    // } else if (operacao == "-") {
+    //     resultado = n1 - n2;
+
+    // } else if (operacao == "*") {
+    //     resultado = n1 * n2;
+
+    // } else if (operacao == "/") {
+    //     resultado = n1 / n2;
+
+    // }
+
+    // alert(resultado);
+
+    switch (operacao) {
+        case "+":
+            resultado = n1 + n2;
+            break;
+
+        case "-":
+            resultado = n1 - n2;
+            break;
+
+        case "*":
+            resultado = n1 * n2;
+            break;
+
+        case "/":
+            resultado = n1 / n2;
+            break;
+
+        default:
+            alert("Saia daqui agora")
+            break;
+    }
+
+}
+
+function intermediario03() {
+
+    let valor = prompt("Coloque o valor da compra")
+    let desconto = (10)
+
+    if (valor >= 100) {
+        alert(valor - desconto)
+
+    } else {
+        alert(valor);
+    }
+
+}
+
+
+function intermediario04 () {
+
+    debugger;
+
+    let usuario = prompt("Coloque o Usuário: ")
+    let senha = prompt("Coloque a Senha: ")
+
+    if (usuario == admin && senha == 1234) {
+        alert("Login Bem-sucedido");
+    } else {
+        alert("Acesso Negado");
+    }
     
 }
+
+intermediario04();
