@@ -20,7 +20,7 @@ function exercicio01() {
 }
 
 
-function solucao() {
+function exercicio02() {
     let numero = prompt("Digite um número");
     let resto = numero % 2;
     if (resto === 0) {
@@ -177,12 +177,10 @@ function intermediario03() {
 
 function intermediario04 () {
 
-    debugger;
-
     let usuario = prompt("Coloque o Usuário: ")
     let senha = prompt("Coloque a Senha: ")
 
-    if (usuario == admin && senha == 1234) {
+    if (usuario === "admin" && senha === "1234") {
         alert("Login Bem-sucedido");
     } else {
         alert("Acesso Negado");
@@ -190,4 +188,20 @@ function intermediario04 () {
     
 }
 
-intermediario04();
+function avancado01 () { 
+
+    let nota = prompt("Coloque sua nota de 0 - 100: ");
+    
+    if (nota >= 90) {
+        alert("A")
+    } else if (nota >= 80) {
+        alert("B")
+    } else if (nota >= 70) {
+        alert("C")
+    } else if (nota >= 60) {
+        alert ("D")
+    } else {
+        alert ("F")
+    } 
+
+}
