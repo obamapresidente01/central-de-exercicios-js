@@ -23,6 +23,7 @@ function exemplowhile() {
     }
 }
 
+
 function exemplodowhile() {
     let contador = 1;
 
@@ -66,16 +67,67 @@ function exercicio03() {
 }
 
 function intermediario01() {
-    let contador = 1
 
-    while (contador <= 50) {
-        if (contador % 2 === 0)
-            console.log(contador)
+    let i = 1
+    while(i <= 50) {
+        if (i % 2 === 0) {
+            console.log (i)
+        }
+        i++
+
     }
-    contador++
 }
 
-intermediario01 ()
+function intermediario02() {
+
+    let N = parseInt(prompt("Digite um numero: "));
+
+    while (N >= 0) {
+        console.log (N);
+        N = N - 1;
+    }
+    N++
+}
+
+function intermediario03() {
+
+    debugger;
+
+    let numeroAleatorio = Math.floor(Math.random() * (100 - 1) + 1);
+
+    let tentativa;
+
+    while (tentativa != numeroAleatorio) {
+        tentativa = parseInt(prompt("Insira um numero: "));
+
+        if (numeroAleatorio > tentativa) {
+            alert ("Numero aleatorio e maior.")
+        } else if (numeroAleatorio < tentativa) {
+            alert ("Numero aleatorio e menor")
+        } else {
+            alert("Voce Acertou!");
+        }
+    }
+}
+
+function avancado01 () {
+
+    let numero = parseInt(prompt("Insira um numero inteiro positivo: "));
+
+    if (numero > 0) {
+        let soma = 0;
+
+        while (numero > 0) {
+            let digito = numero % 10;
+            soma += digito; //soma o digito
+            numero = Math.floor(numero / 10); //remove o ultimo digito
+        }
+        console.log ("A soma dos dígitos é:" + soma);
+    } else {
+        console.log ("Por favor, digite um numero inteiro positivo");
+    }
+}
+
 
 
 
