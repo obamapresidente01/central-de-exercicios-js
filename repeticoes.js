@@ -35,7 +35,7 @@ function exemplodowhile() {
     } while (contador <= 5);
 }
 
-function exercicio01() {
+function exercicio01rep() {
     for (let contador = 1; contador <= 10; contador++) {
 
         alert(contador);
@@ -43,7 +43,7 @@ function exercicio01() {
     }
 }
 
-function exercicio02() {
+function exercicio02rep() {
     let numero = parseInt(prompt("Digite um numero: ")); //parseInt serve para converter string por um numero inteiro
 
     for (let i = 1; i <= 10; i++) {

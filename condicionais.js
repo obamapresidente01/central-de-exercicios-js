@@ -1,38 +1,42 @@
-function exercicio01() {
+function exercicio02con() {
 
     let numero = prompt("Digite um número:"); //23
 
     if (numero > 0) {
-        console.log("Positivo.");
+        alert("Positivo.");
 
     } else {
 
         if (numero < 0) {
 
-            console.log("Negativo.")
+           alert("Negativo.")
         } else {
 
-            console.log("É Zero.")
+            alert("É Zero.")
         }
 
 
     }
+    
+    gerarLog("Exercício de condicionais 02 executado. " + new Date().toLocaleString());
 }
 
 
-function exercicio02() {
+function exerciciocon() {
     let numero = prompt("Digite um número");
     let resto = numero % 2;
     if (resto === 0) {
-        console.log("par");
+        alert("par");
     } else {
-        console.log("impar");
+        alert("impar");
     }
+
+    gerarLog("Exercício de condicionais 01 executado. " + new Date().toLocaleDateString());
 }
 
 //Exercicio 3
 
-function exercicio03() {
+function exercicio01con() {
 
 
     debugger;
@@ -46,12 +50,12 @@ function exercicio03() {
     }
 
 
-
+    gerarLog("Exercício de condicionais 01 executado. " + new Date().toLocaleString());
 
 
 }
 
-function exercicioextra() {
+function exercicioextracon() {
     let nota = prompt("Coloque sua nota:");
 
     if (nota == 100) {
@@ -61,10 +65,10 @@ function exercicioextra() {
     } else {
         alert("Desaprovado");
     }
-
+    gerarLog("Exercício de condicionais 02 executado. " + new Date().toLocaleDateString());
 }
 
-function exercicio04() {
+function exercicio04con() {
     let idade = prompt("Coloque sua idade:");
 
     if (idade >= 18) {
@@ -76,9 +80,10 @@ function exercicio04() {
     } else {
         alert("idade inválida");
     }
+    gerarLog("Exercício de condicionais 01 executado. " + new Date().toLocaleDateString());
 }
 
-function exercicio05() {
+function exercicio05con() {
     let nota = prompt("Digite sua nota");
 
     if (nota >= 60) {
@@ -86,11 +91,12 @@ function exercicio05() {
     } else {
         alert("Desaprovado")
     }
+    gerarLog("Exercício de condicionais 01 executado. " + new Date().toLocaleDateString());
 }
 
 //intermediario
 
-function intermediario01() {
+function intermediario01con() {
 
     let num1 = prompt("Digite o primeiro número");
     let num2 = prompt("Digite o segundo número");
@@ -108,11 +114,11 @@ function intermediario01() {
     alert("O maior é:" + maior)
 
 
-
+    gerarLog("Exercício de condicionais 01 executado. " + new Date().toLocaleDateString());
 
 }
 
-function intermediario02() {
+function intermediario02con() {
     let n1 = Number(prompt("Digite um número: "));
     let n2 = Number(prompt("Digite outro número: "));
 
@@ -157,10 +163,11 @@ function intermediario02() {
             alert("Saia daqui agora")
             break;
     }
+    gerarLog("Exercício de condicionais 01 executado. " + new Date().toLocaleDateString());
 
 }
 
-function intermediario03() {
+function intermediario03con() {
 
     let valor = prompt("Coloque o valor da compra")
     let desconto = (10)
@@ -171,11 +178,12 @@ function intermediario03() {
     } else {
         alert(valor);
     }
+    gerarLog("Exercício de condicionais 01 executado. " + new Date().toLocaleDateString());
 
 }
 
 
-function intermediario04 () {
+function intermediario04con() {
 
     let usuario = prompt("Coloque o Usuário: ")
     let senha = prompt("Coloque a Senha: ")
@@ -185,10 +193,11 @@ function intermediario04 () {
     } else {
         alert("Acesso Negado");
     }
+    gerarLog("Exercício de condicionais 01 executado. " + new Date().toLocaleDateString());
     
 }
 
-function avancado01 () { 
+function avancado01con() { 
 
     let nota = prompt("Coloque sua nota de 0 - 100: ");
     
@@ -203,5 +212,18 @@ function avancado01 () {
     } else {
         alert ("F")
     } 
+    gerarLog("Exercício de condicionais 01 executado. " + new Date().toLocaleDateString());
+
+}
+
+function gerarLog (textoDoLog) {
+
+    let container = document.querySelector(".logs-container");
+
+    let paragraph = document.createElement("p");
+
+    paragraph.innerHTML = textoDoLog;
+
+    container.appendChild(paragraph); // adiciona o paragrafo dentro de logsContainer
 
 }
